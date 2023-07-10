@@ -193,6 +193,36 @@ nav ul li:hover, nav ul li:active{
     display: none;
 }
 
+/* Filtre de recherche */
+
+    
+.filtres-container{
+    display: flex;
+    font-weight: 500;
+    gap: 10px;
+    margin: 30px 0px;
+    align-items: center;
+}
+
+.filtres-container i{
+    margin-right: 5px;
+}
+
+.filtres-items-container, .filtres-items-container-proche{
+    display: flex;
+    gap: 15px;
+}
+
+.filtres-items-container-proche span{
+    border: solid #d7d6d6 1px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.filtres-items-container-proche span:hover{
+    background-color: #DEEBFF;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
