@@ -13,9 +13,13 @@
     color: var(--main-color);
 }
 
+html
+
 body {
     display: flex;
     justify-content: center;
+    padding: 0%;
+    margin: 0px;
 }
 
 .main-container {
@@ -58,32 +62,43 @@ body {
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 0px;
 }
 
 nav{
     width: 20%;
+    margin: 0px;
 }
 
 nav ul{
     display: flex;
     justify-content: space-between;
     margin: 0%;
-    padding: 0% 10px;
+    padding: 0px 10px;
 }
 
 nav ul li{
     list-style-type: none;
-    padding-top: 7px;
+    padding-top: 20px;
 }
 
 nav ul li:hover, nav ul li:active{
     color: #0065FC;
-    border-top: solid 3px var(--main-color);
+    border-top: solid 4px var(--main-color);
+}
+
+.logo-container{
+    padding-top: 40px;
 }
 
 header img{
-    width: 100px;
+    width: 80px;
+}
+
+/* Zone de bannière*/
+
+.container{
+    padding-top: 30px;
 }
 
 /* Formulaire de recherche*/
@@ -99,8 +114,16 @@ header img{
     height: 45px;
     background-color: white;
     border: solid #e6e6e6 1px;
+    width: 15%;
     border-radius: 0px;
     padding-left: 15px;
+}
+
+.search-form input::placeholder{
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    font-size: 1.2em;
 }
 
 .search-form button{
@@ -143,6 +166,7 @@ header img{
     gap: 10px;
     margin: 20px 0px;
     align-items: center;
+    padding-top: 20px;
 }
 
 .filtres-container i{
@@ -160,13 +184,12 @@ header img{
     padding: 10px;
 }
 
-.filtres-items-container-proche span:hover{
+.filtres-items-container-proche .filtre-item:hover{
     background-color: #DEEBFF;
 }
 
-#title{
+.filtres-container h2{
     font-size: 1.1em;
-    margin-top: 40px;
 }
 /* Info bar CSS code */
 
@@ -409,7 +432,10 @@ footer ul li{
     /* Zone de filtres */
 
     .filtres-container{
+        display: flex;
+        flex-direction: column;
         font-size: 0.9em;
+        align-items: flex-start;
     }
 
     /* Barre d'info */
@@ -491,7 +517,7 @@ footer ul li{
     .main-container {
         width: 100%;
         max-width: 1440px;
-        padding: 0 10px;
+        padding: 0px;
         box-sizing: border-box;
     }
 
@@ -500,13 +526,17 @@ footer ul li{
     header{
         display: flex;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     header .logo-container a{
         display: inline-block;
         width: 100%;
         margin: auto;
+    }
+
+    header img{
+        width: 70px;
     }
 
     .logo-container{
@@ -539,13 +569,17 @@ footer ul li{
     }
 
     nav ul li:hover, nav ul li:active{
-        border-color: var(--main-color)
+        border-bottom: var(--main-color) 2px solid;
+        border-top: none;
+    }
+
+    .container{
+        margin: 0px 20px;
     }
 
     /* Formulaire de recherche */
 
     form{
-        
         border: solid #e6e6e6 1px;
         border-radius: 15px;
     }
@@ -581,6 +615,7 @@ footer ul li{
     .filtres-container{
         display: flex;
         flex-direction: column;
+        font-size: 1.1em;
     }
 
     .filtres-items-container{
@@ -623,7 +658,6 @@ footer ul li{
 
     .hebergements-and-populaires section{
         border-radius: 0;
-        padding: 3 ;
     }
 
 
@@ -684,7 +718,7 @@ footer ul li{
     }
 
     .activites-card{
-        width: 94%;
+        width: 100%;
     }
 
     .activites-card img{
@@ -692,6 +726,7 @@ footer ul li{
     }
 
     .activites-section{
+        padding: 0px 18px;
         margin-top: 0px;
     }
 
